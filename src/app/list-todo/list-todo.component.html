@@ -1,6 +1,6 @@
 <ul>
-  <li class="flex" *ngFor="let item of arrayTodoList">
-    <p [ngClass]="item.done ? 'if-done' : ''" (click)="toggelDoneUnDone(item.id)">{{item.todo}}</p>
+  <li class="flex" *ngFor="let item of arrayTodoList;index as i">
+    <app-notes [typetext]="item.done ? 'danger' : 'success'"> <p [ngClass]="item.done ? 'if-done' : ''" (click)="toggelDoneUnDone(i+1)">{{item.todo}}</p></app-notes>
     <span style="margin-top:15px;">
       <app-button [classBtn]="'red-button'" (click)="DeleteToDo(item.id)">X</app-button>
     </span>

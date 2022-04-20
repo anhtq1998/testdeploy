@@ -6,6 +6,8 @@ import { AddformComponent } from './addform/addform.component';
 import { ListTodoComponent } from './list-todo/list-todo.component';
 import { FormsModule } from '@angular/forms';
 import { ButtonComponent } from './button/button.component';
+import { NotesComponent } from './notes/notes.component';
+import { GlowtextComponent } from './glowtext/glowtext.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { ButtonComponent } from './button/button.component';
     AppComponent,
     AddformComponent,
     ListTodoComponent,
-    ButtonComponent
+    ButtonComponent,
+    NotesComponent,
+    GlowtextComponent
   ],
   imports: [
     BrowserModule,
