@@ -1,0 +1,6 @@
+<input class="form-item" placeholder="Input todo list" [(ngModel)]="worktodo"/>
+<br/>
+<div class="text-center"><app-button [classBtn]="'green-button'" (click)="addnew()">ADD</app-button></div>
+
+
+<app-list-todo class="list-todo" [arrayTodoList]="arrayTodoList" (myClick)="romoveid($event)" (ChangeDoneUnDone)="toggel($event)"></app-list-todo>
